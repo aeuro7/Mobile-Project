@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'model/ticket_model.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'tools/dot.dart';
 import 'tools/dayformat.dart';
 
@@ -11,54 +11,90 @@ class Ticket extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       appBar: AppBar(
-        title: const Text("My Ticket"),
-        backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+        title: const Text(
+          "My Ticket",
+          style: TextStyle(color: Colors.black), // เปลี่ยนสีข้อความใน AppBar
+        ),
+        backgroundColor: const Color.fromARGB(
+          255,
+          255,
+          255,
+          255,
+        ), // สีพื้นหลังของ AppBar
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
+          icon: const Icon(
+            Icons.arrow_back,
+            color: Colors.black,
+          ), // ไอคอนด้านซ้าย
           onPressed: () {
-            Navigator.pushNamed(context, '/home');
+            Navigator.pushNamed(context, '/home'); // นำทางไปยังหน้าหลัก
           },
         ),
-      ),
-      body: Column(
-        children: [
-          Expanded(
-            child: ListView.builder(
-              padding: const EdgeInsets.all(20),
-              itemCount: tickets.length,
-              itemBuilder: (context, index) {
-                return TicketCard(ticket: tickets[index]);
-              },
-            ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.add, color: Colors.black), // ไอคอนด้านขวา
+            onPressed: () {
+              Navigator.pushNamed(
+                context,
+                '/addTicket',
+              ); // นำทางไปยังหน้าเพิ่ม Ticket
+            },
           ),
         ],
+      ),
+
+      body: StreamBuilder<QuerySnapshot>(
+        stream:
+            FirebaseFirestore.instance
+                .collection('tickets')
+                .orderBy('ticket_date', descending: false)
+                .snapshots(),
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const Center(child: CircularProgressIndicator());
+          } else if (snapshot.hasError) {
+            return const Center(child: Text("Error loading tickets"));
+          } else if (!snapshot.hasData || snapshot.data!.docs.isEmpty) {
+            return const Center(child: Text("No tickets available"));
+          }
+
+          final tickets = snapshot.data!.docs;
+
+          return ListView.builder(
+            padding: const EdgeInsets.all(20),
+            itemCount: tickets.length,
+            itemBuilder: (context, index) {
+              final ticket = tickets[index];
+              return TicketCard(ticket: ticket);
+            },
+          );
+        },
       ),
     );
   }
 }
 
 class TicketCard extends StatelessWidget {
-  final TicketInfo ticket;
+  final QueryDocumentSnapshot ticket;
 
   const TicketCard({super.key, required this.ticket});
 
   @override
   Widget build(BuildContext context) {
-    List<String> dateList =
-        splitDate(ticket.date);
+    // ดึงข้อมูลจาก snapshot
+    final ticketData = ticket.data() as Map<String, dynamic>;
+    List<String> dateList = splitDate(ticketData['ticket_date']);
     String month = dateList[0];
     String day = dateList[1];
     String year = dateList[2];
 
     return Card(
       margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 16),
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(16),
-      ),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       elevation: 2,
       child: Row(
         children: [
-        
+          // ส่วนซ้ายของการ์ด
           Expanded(
             flex: 4,
             child: Container(
@@ -78,7 +114,7 @@ class TicketCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "${ticket.city} - ${ticket.country}",
+                    "${ticketData['ticket_city']} - ${ticketData['ticket_country']}",
                     style: const TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -87,29 +123,20 @@ class TicketCard extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    "Time: ${ticket.time}",
-                    style: const TextStyle(
-                      fontSize: 14,
-                      color: Colors.white,
-                    ),
+                    "Time: ${ticketData['ticket_time']}",
+                    style: const TextStyle(fontSize: 14, color: Colors.white),
                   ),
                   Text(
-                    "Seat: ${ticket.seat}",
-                    style: const TextStyle(
-                      fontSize: 14,
-                      color: Colors.white,
-                    ),
+                    "Seat: ${ticketData['ticket_seat']}",
+                    style: const TextStyle(fontSize: 14, color: Colors.white),
                   ),
                   Text(
-                    "Stadium: ${ticket.stadium}",
-                    style: const TextStyle(
-                      fontSize: 14,
-                      color: Colors.white,
-                    ),
+                    "Stadium: ${ticketData['ticket_stadium']}",
+                    style: const TextStyle(fontSize: 14, color: Colors.white),
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    "Booking ID: ${ticket.ticketId}",
+                    "Booking ID: ${ticketData['ticket_ticketId']}",
                     style: const TextStyle(
                       fontSize: 14,
                       color: Colors.white70,
@@ -121,20 +148,15 @@ class TicketCard extends StatelessWidget {
             ),
           ),
 
-        
+          // ส่วนขวาของการ์ด
           Stack(
             alignment: Alignment.center,
             clipBehavior: Clip.none,
             children: [
-            
               Container(
                 width: 100,
                 height: 100,
                 decoration: const BoxDecoration(
-                
-                
-                
-                
                   borderRadius: BorderRadius.only(
                     topRight: Radius.circular(16),
                     bottomRight: Radius.circular(16),
@@ -144,25 +166,26 @@ class TicketCard extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(month,
-                          style: const TextStyle(
-                            fontWeight: FontWeight.bold,
-                          )),
-                      Text(day,
-                          style: const TextStyle(
-                            fontSize: 40,
-                            fontWeight: FontWeight.bold,
-                            color: Color(0xFF091442),
-                          )),
-                      Text(year,
-                          style: const TextStyle(
-                            fontWeight: FontWeight.bold,
-                          )),
+                      Text(
+                        month,
+                        style: const TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                        day,
+                        style: const TextStyle(
+                          fontSize: 40,
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xFF091442),
+                        ),
+                      ),
+                      Text(
+                        year,
+                        style: const TextStyle(fontWeight: FontWeight.bold),
+                      ),
                     ],
                   ),
                 ),
               ),
-            
               Positioned(
                 left: -8,
                 top: -35,
@@ -187,14 +210,12 @@ class TicketCard extends StatelessWidget {
                   ),
                 ),
               ),
-            
               Positioned(
                 left: 1,
                 top: -18,
                 bottom: 0,
                 child: CustomPaint(
-                  size: const Size(2,
-                      100),
+                  size: const Size(2, 100),
                   painter: DottedLinePainter(),
                 ),
               ),

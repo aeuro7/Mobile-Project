@@ -26,7 +26,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
+<<<<<<< HEAD
 		b4wRSq0rn7rA8BtOYcZWvl5xgoE=
+=======
+		T7Lb36/+ewx9yO3PGPcuS5LqHdU=
+>>>>>>> c5a408dd4ef9f18ce279713a818604faee577a73
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -34,7 +38,11 @@
 		</data>
 		<key>nanopb_Privacy.bundle/Info.plist</key>
 		<data>
+<<<<<<< HEAD
 		V1GUTlBjd2QAVjqcW+0rfNtfxns=
+=======
+		/8EXhfoMPoQazyTqWJuc3AplW3M=
+>>>>>>> c5a408dd4ef9f18ce279713a818604faee577a73
 		</data>
 		<key>nanopb_Privacy.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -89,7 +97,11 @@
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			vI7B4fsShvyI6mgndprITUPzJQMozYMnWaZnhK/bvfw=
+=======
+			8ovp8lGvSqy7sCvwognM+XhLvxB5RHFiGhxAlFqWjps=
+>>>>>>> c5a408dd4ef9f18ce279713a818604faee577a73
 			</data>
 		</dict>
 		<key>nanopb_Privacy.bundle/PrivacyInfo.xcprivacy</key>

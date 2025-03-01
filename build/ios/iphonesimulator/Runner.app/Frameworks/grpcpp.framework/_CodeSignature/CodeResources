@@ -6,11 +6,19 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
+<<<<<<< HEAD
 		M3/3iVwTPyQkqpqykJyTpDdAOLM=
 		</data>
 		<key>gRPCCertificates-Cpp.bundle/Info.plist</key>
 		<data>
 		yNXdXnTssW5cwKhPJIJMCpk5LqA=
+=======
+		TEUhHd6u/dDkxg0YlLqS7jf1nU8=
+		</data>
+		<key>gRPCCertificates-Cpp.bundle/Info.plist</key>
+		<data>
+		z+DF4KTZozk2HgB2RHAnMlvd1zE=
+>>>>>>> c5a408dd4ef9f18ce279713a818604faee577a73
 		</data>
 		<key>gRPCCertificates-Cpp.bundle/roots.pem</key>
 		<data>
@@ -18,7 +26,11 @@
 		</data>
 		<key>grpcpp.bundle/Info.plist</key>
 		<data>
+<<<<<<< HEAD
 		Qhko8Bbhf3H27K+pE6j7zSVLp08=
+=======
+		D0GmyJ2PCmp5SUf41da9Kw6m71s=
+>>>>>>> c5a408dd4ef9f18ce279713a818604faee577a73
 		</data>
 		<key>grpcpp.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -31,7 +43,11 @@
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			JX0xgB5wiuMaQRtTDJUowz3A2KlYftWen81ipDMhALU=
+=======
+			YwhtzBRFrLIoWa7LiopzjMcBCBrek8C41MaRKS0GOyE=
+>>>>>>> c5a408dd4ef9f18ce279713a818604faee577a73
 			</data>
 		</dict>
 		<key>gRPCCertificates-Cpp.bundle/roots.pem</key>
@@ -45,7 +61,11 @@
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			5MuyL1ZzFBO2mad0Ja/e5r6IiR0VJ02ZUHt3LMKn0tw=
+=======
+			Dp/IIZqREOHb7SVImjj6ZWZEDfGwd89o+i2sN4mrfck=
+>>>>>>> c5a408dd4ef9f18ce279713a818604faee577a73
 			</data>
 		</dict>
 		<key>grpcpp.bundle/PrivacyInfo.xcprivacy</key>

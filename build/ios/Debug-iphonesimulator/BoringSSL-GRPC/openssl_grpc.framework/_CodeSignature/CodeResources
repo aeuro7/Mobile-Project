@@ -386,7 +386,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
+<<<<<<< HEAD
 		434F5S4tGJwXxxFAYLsimg6PI54=
+=======
+		iK2FPcBRynks+5UslTADIBKcJrQ=
+>>>>>>> c5a408dd4ef9f18ce279713a818604faee577a73
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -666,7 +670,11 @@
 		</data>
 		<key>openssl_grpc.bundle/Info.plist</key>
 		<data>
+<<<<<<< HEAD
 		6vrP+0432i4/XaMlurd7nW8OUrY=
+=======
+		Rt8XQd5OK08+KUhGNk7NdeZVbow=
+>>>>>>> c5a408dd4ef9f18ce279713a818604faee577a73
 		</data>
 		<key>openssl_grpc.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -2483,11 +2491,19 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			6vrP+0432i4/XaMlurd7nW8OUrY=
 			</data>
 			<key>hash2</key>
 			<data>
 			RqEQQRRvo8icjoiL5IyJocoy1UPX/tc3nahpmB2pVCk=
+=======
+			Rt8XQd5OK08+KUhGNk7NdeZVbow=
+			</data>
+			<key>hash2</key>
+			<data>
+			0D8OkO1myBKXje8rXbpCWnhT2JF0LtYD2oQ+PPNu16I=
+>>>>>>> c5a408dd4ef9f18ce279713a818604faee577a73
 			</data>
 		</dict>
 		<key>openssl_grpc.bundle/PrivacyInfo.xcprivacy</key>

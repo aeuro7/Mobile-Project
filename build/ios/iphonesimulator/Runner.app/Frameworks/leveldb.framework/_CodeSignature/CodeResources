@@ -6,11 +6,19 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
+<<<<<<< HEAD
 		IQXhCVO9vFyQzNQRk2lKyYO35D4=
 		</data>
 		<key>leveldb_Privacy.bundle/Info.plist</key>
 		<data>
 		3YqHkEHSLqFY6F4UF8bG3PtFWpk=
+=======
+		iHrZa3SUKg7UCcbcMey6wlOTZb0=
+		</data>
+		<key>leveldb_Privacy.bundle/Info.plist</key>
+		<data>
+		DYBvAM39PxPQ5oPJNiqNujtCFtY=
+>>>>>>> c5a408dd4ef9f18ce279713a818604faee577a73
 		</data>
 		<key>leveldb_Privacy.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -23,7 +31,11 @@
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			M/KXchfbtS55Tvs0X2mh48EVmtsyOliiuVNrZ04hcrw=
+=======
+			BLsmQDyNuPVZUQasGYBUXgIOkI7YwUS0n1h/aCgPEgI=
+>>>>>>> c5a408dd4ef9f18ce279713a818604faee577a73
 			</data>
 		</dict>
 		<key>leveldb_Privacy.bundle/PrivacyInfo.xcprivacy</key>

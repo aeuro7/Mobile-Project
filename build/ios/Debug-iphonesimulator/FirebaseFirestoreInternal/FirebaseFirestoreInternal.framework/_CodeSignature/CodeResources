@@ -6,7 +6,11 @@
 	<dict>
 		<key>FirebaseFirestoreInternal_Privacy.bundle/Info.plist</key>
 		<data>
+<<<<<<< HEAD
 		UBtoR4Oncm4ssajCKsUcCbnrnRU=
+=======
+		kcHh0QZTu1VdtrMcmJmvVQ7TfWg=
+>>>>>>> c5a408dd4ef9f18ce279713a818604faee577a73
 		</data>
 		<key>FirebaseFirestoreInternal_Privacy.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -134,7 +138,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
+<<<<<<< HEAD
 		nhNiUMOOMA7OglmaMUJa6DBbwJs=
+=======
+		sGIOjfhcebc3RQpHx3MytR4oEOo=
+>>>>>>> c5a408dd4ef9f18ce279713a818604faee577a73
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -147,7 +155,11 @@
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			Bnr+7oxcFB2yGYd82iolx+aq8B05+Cdz/Pvcw/iZWG4=
+=======
+			GdX4DNx8ef2WdyiLk8UA0dav8NseB0mzjToafVOP9fU=
+>>>>>>> c5a408dd4ef9f18ce279713a818604faee577a73
 			</data>
 		</dict>
 		<key>FirebaseFirestoreInternal_Privacy.bundle/PrivacyInfo.xcprivacy</key>

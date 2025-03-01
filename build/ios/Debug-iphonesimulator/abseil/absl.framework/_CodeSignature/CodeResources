@@ -1222,7 +1222,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
+<<<<<<< HEAD
 		TtSDEQkkJBo3iq3BJWGVS+2gRdc=
+=======
+		F2xmL42TBZzaJhZapq059UOGFz4=
+>>>>>>> c5a408dd4ef9f18ce279713a818604faee577a73
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1230,7 +1234,11 @@
 		</data>
 		<key>xcprivacy.bundle/Info.plist</key>
 		<data>
+<<<<<<< HEAD
 		jRO9j+RahAKkxqVAD7lUi8+onu4=
+=======
+		vy5HH7j04IY5mZRBNsI7fqJS8MU=
+>>>>>>> c5a408dd4ef9f18ce279713a818604faee577a73
 		</data>
 		<key>xcprivacy.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -4598,11 +4606,19 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			jRO9j+RahAKkxqVAD7lUi8+onu4=
 			</data>
 			<key>hash2</key>
 			<data>
 			4x3FnNov0igzQJWL7YdwZ3pw9FPZUJib/d0z8LZOakk=
+=======
+			vy5HH7j04IY5mZRBNsI7fqJS8MU=
+			</data>
+			<key>hash2</key>
+			<data>
+			LfGjmXpwiJUwghgcdVoYebv5ia5qZmgIVaOiWlZlVJU=
+>>>>>>> c5a408dd4ef9f18ce279713a818604faee577a73
 			</data>
 		</dict>
 		<key>xcprivacy.bundle/PrivacyInfo.xcprivacy</key>

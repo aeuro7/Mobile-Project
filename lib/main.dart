@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:layout/Admin/admin.dart';
 import 'package:layout/Auth/login.dart';
 import 'package:layout/Auth/sign_up.dart';
 import 'package:layout/Community/team.dart';
@@ -6,6 +7,7 @@ import 'package:layout/Community/team_community.dart';
 import 'package:layout/MatchDay/listmatch.dart';
 import 'package:layout/News/newslist.dart';
 import 'package:layout/account.dart';
+import 'package:layout/Ticket/add.dart';
 import 'screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
@@ -42,6 +44,8 @@ class MyApp extends StatelessWidget {
         '/community' : (context) => const Team(),
         '/teamcommunity': (context) => const TeamCommunity(),
         '/newslist': (context) => const NewsListPage(),
+        '/admin': (context) => const AdminPage(),
+        '/addTicket': (context) => const AddTicketPage(),
       },
     );
   }

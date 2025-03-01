@@ -6,11 +6,19 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
+<<<<<<< HEAD
 		DZC3EhrQ2Paraq/lFshDRxJmyjw=
 		</data>
 		<key>grpc.bundle/Info.plist</key>
 		<data>
 		Ue+ydRoDpnP+XRgaYurD5XkJcaE=
+=======
+		L/h25mo+C/R4g8R9L//feOg0p4Y=
+		</data>
+		<key>grpc.bundle/Info.plist</key>
+		<data>
+		x4a6XDvGZD4cv7DpS6gCWgDJP2Y=
+>>>>>>> c5a408dd4ef9f18ce279713a818604faee577a73
 		</data>
 		<key>grpc.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -23,7 +31,11 @@
 		<dict>
 			<key>hash2</key>
 			<data>
+<<<<<<< HEAD
 			YXaGj2BZgb/+ev9J/4CPH747kPvZIUd13+QaseF4pLg=
+=======
+			ymYOpGaHyYnLf/TUPzR3xc2gH1kLoL6Kxw6CDOkp0+c=
+>>>>>>> c5a408dd4ef9f18ce279713a818604faee577a73
 			</data>
 		</dict>
 		<key>grpc.bundle/PrivacyInfo.xcprivacy</key>

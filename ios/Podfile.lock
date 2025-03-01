@@ -1151,7 +1151,11 @@ PODS:
   - BoringSSL-GRPC/Implementation (0.0.36):
     - BoringSSL-GRPC/Interface (= 0.0.36)
   - BoringSSL-GRPC/Interface (0.0.36)
+<<<<<<< HEAD
   - cloud_firestore (5.6.5):
+=======
+  - cloud_firestore (5.6.4):
+>>>>>>> c5a408dd4ef9f18ce279713a818604faee577a73
     - Firebase/Firestore (= 11.8.0)
     - firebase_core
     - Flutter
@@ -1168,7 +1172,11 @@ PODS:
   - Firebase/Firestore (11.8.0):
     - Firebase/CoreOnly
     - FirebaseFirestore (~> 11.8.0)
+<<<<<<< HEAD
   - firebase_auth (5.5.1):
+=======
+  - firebase_auth (5.5.0):
+>>>>>>> c5a408dd4ef9f18ce279713a818604faee577a73
     - Firebase/Auth (= 11.8.0)
     - firebase_core
     - Flutter
@@ -1220,7 +1228,11 @@ PODS:
     - gRPC-Core (~> 1.65.0)
     - leveldb-library (~> 1.22)
     - nanopb (~> 3.30910.0)
+<<<<<<< HEAD
   - FirebaseSharedSwift (11.9.0)
+=======
+  - FirebaseSharedSwift (11.8.0)
+>>>>>>> c5a408dd4ef9f18ce279713a818604faee577a73
   - Flutter (1.0.0)
   - GoogleUtilities/AppDelegateSwizzler (8.0.2):
     - GoogleUtilities/Environment
@@ -1396,7 +1408,11 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   abseil: d121da9ef7e2ff4cab7666e76c5a3e0915ae08c3
   BoringSSL-GRPC: ca6a8e5d04812fce8ffd6437810c2d46f925eaeb
+<<<<<<< HEAD
   cloud_firestore: e61acbf808607d2c88ee32b00cd3aec027b38b3c
+=======
+  cloud_firestore: 7a6d7b8111fe44d13a0e49783daad5219ce798ff
+>>>>>>> c5a408dd4ef9f18ce279713a818604faee577a73
   desktop_webview_auth: 4cf620136c3d79796496eef85e59508e3a1a003d
   Firebase: d80354ed7f6df5f9aca55e9eb47cc4b634735eaf
   firebase_auth: 9ebbd83276bf977dea1c74dfc199acf9d2a2f42f
@@ -1411,7 +1427,11 @@ SPEC CHECKSUMS:
   FirebaseDynamicLinks: 629256017b6ed32a5629fd1a90bc734ab213edfb
   FirebaseFirestore: 563a4ab1a65e2858f05e150bb4c31b0f8f79248b
   FirebaseFirestoreInternal: 8c5921c360a70e447bfeefb245f450e8b50e750b
+<<<<<<< HEAD
   FirebaseSharedSwift: 574e6a5602afe4397a55c8d4f767382d620285de
+=======
+  FirebaseSharedSwift: 672954eac7b141d6954fab9a32d45d6b1d922df8
+>>>>>>> c5a408dd4ef9f18ce279713a818604faee577a73
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
   GoogleUtilities: 26a3abef001b6533cf678d3eb38fd3f614b7872d
   "gRPC-C++": 2fa52b3141e7789a28a737f251e0c45b4cb20a87

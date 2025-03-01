@@ -62,7 +62,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
+<<<<<<< HEAD
 		mij6WPJl6DVPEciVEN4m8JXaF58=
+=======
+		uZO1fXa003ICTfKFMclXKkEGFs8=
+>>>>>>> c5a408dd4ef9f18ce279713a818604faee577a73
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
